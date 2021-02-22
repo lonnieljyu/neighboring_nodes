@@ -57,7 +57,7 @@ class NeighbordingNodes:
         return 0 <= x < self.size and 0 <= y < self.size
 
     def __get_cross(self, i: int, m: int) -> List[Tuple[int, int]]:
-        x, y = self.grid[i]
+        x, y = self.get_node_coordinates(i)
         nodes = list()
         for i in range(1, m + 1):
             if not self.__is_valid_node(x - i, y):
@@ -81,7 +81,7 @@ class NeighbordingNodes:
         return nodes
 
     def __get_diagonals(self, i: int, m: int) -> List[Tuple[int, int]]:
-        x, y = self.grid[i]
+        x, y = self.get_node_coordinates(i)
         nodes = list()
         for i in range(1, m + 1):
             if not self.__is_valid_node(x - i, y - i):
