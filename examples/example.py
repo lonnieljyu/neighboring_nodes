@@ -1,4 +1,4 @@
-from ..source.grid import NeighbordingNodes
+from source.grid import NeighbordingNodes
 
 # initialize 5x5 grid and print grid
 grid = NeighbordingNodes(5, debug=True)

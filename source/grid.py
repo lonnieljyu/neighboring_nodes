@@ -51,3 +51,7 @@ class NeighbordingNodes:
             If i is an invalid index then None is returned.
         """
         return self.grid[i] if 0 <= i < self.size * self.size else None
+
+
+if __name__ == '__main__':
+    pass
