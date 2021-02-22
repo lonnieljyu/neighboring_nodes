@@ -1,7 +1,7 @@
 """grid.py
 
 Public:
-    NeighbordingNodes
+    NeighboringNodes
         build_grid()
         get_node_coordinates()
         find_neighbors()
